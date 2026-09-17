@@ -86,12 +86,14 @@ NON_FACULTY_KEYWORDS = [
     r"\baccountant\b", r"\baccounts\s+officer\b", r"\baudit\s+officer\b", r"\bcaretaker\b",
     r"\bsweeper\b", r"\bcarpenter\b", r"\bhelper\b", r"\bbus\s+conductor\b", r"\bsports\s+coach\b",
     r"\bfitness\s+instructor\b", r"\bgym\s+(?:trainer|instructor)\b", r"\byoga\s+instructor\b",
-    r"\bdriving\s+instructor\b", r"\bfdp\b", r"\bworkshop\b", r"\bconference\b", r"\bsymposium\b",
+    r"\bdriving\s+instructor\b", r"\bfaculty\s+development\s+program(?:me)?s?\b",
+    r"\bdevelopment\s+program(?:me)?s?\b", r"\bfdp\b", r"\bworkshop\b", r"\bconference\b", r"\bsymposium\b",
     r"\bseminar\b", r"\bfaculty\s+profile\b", r"\bfaculty\s+directory\b", r"\bfaculty\s+list\b",
     r"\bmeet\s+our\s+faculty\b", r"\bfaculty\s+coordinator\b", r"\bfaculty\s+advisor\b",
     r"\bboard\s+of\s+studies\b", r"\bfaculty\s+exchange\b", r"\bfaculty\s+awards?\b",
     r"\bfaculty\s+achievements?\b", r"\bfaculty\s+publications?\b", r"\bexam\s+schedule\b",
     r"\bsyllabus\b", r"\bhow\s+to\s+apply\b", r"\beligibility\s+criteria\b",
+    r"\bcampus\s+life\b", r"\bhostel\b",
 ]
 
 COMPILED_FACULTY_RE = [re.compile(p, re.IGNORECASE) for p in FACULTY_TITLE_KEYWORDS]
@@ -189,7 +191,7 @@ def extract_faculty_details(title: str, text: str = "") -> Dict[str, Optional[st
 
     # 2. Experience
     exp_match = re.search(
-        r"((?:Minimum\s+)?\d+\+?\s*(?:years?|yrs?)\s*(?:of)?\s*(?:post-doctoral|post[\s-]ph\.?d\.?|teaching|research|industrial|academics)?\s*experience[^\.\n,]*)",
+        r"((?:Minimum\s+)?\d+\+?\s*(?:years?|yrs?)(?:\s+of)?(?:\s+(?:post[\s-]doctoral|post[\s-]ph\.?d\.?|teaching|research|industrial|academics|relevant|industry|and|,|/|\s)+)?\s*experience[^\.\n,]*)",
         combined,
         re.IGNORECASE
     )
