@@ -1,0 +1,152 @@
+{
+  "start_url": "https://mits.ac.in/positionsoffered",
+  "institution_title": "Madanapalle Institute of Technology & Science | Deemed to be University",
+  "pages_crawled": 5,
+  "career_hubs_discovered": [
+    "https://mits.ac.in/positionsoffered",
+    "https://mits.ac.in/dean-positionsoffered"
+  ],
+  "total_openings": 14,
+  "openings": [
+    {
+      "position": "Professor",
+      "department": "School of Computing",
+      "qualification": "Ph.D. in appropriate discipline from IIT / NIT / Foreign University",
+      "experience": "Minimum 12 Years of Post Ph.D. experience in Academics / Research / Industry Salary: As per the revised AICTE Pay scale",
+      "pay_scale": "AICTE Pay scale",
+      "deadline": "Rolling / See official post",
+      "source_url": "https://mits.ac.in/positionsoffered",
+      "extraction_layout": "HTML Table"
+    },
+    {
+      "position": "Associate Professor",
+      "department": "School of Computing",
+      "qualification": "Ph.D. in appropriate discipline from IIT / NIT / Foreign University",
+      "experience": "Minimum 7 Years of Post Ph.D. experience in Academics / Research / Industry Salary: As per the revised AICTE Pay scale",
+      "pay_scale": "AICTE Pay scale",
+      "deadline": "Rolling / See official post",
+      "source_url": "https://mits.ac.in/positionsoffered",
+      "extraction_layout": "HTML Table"
+    },
+    {
+      "position": "Senior Assistant Professor",
+      "department": "School of Computing",
+      "qualification": "Ph.D. in appropriate discipline from IIT / NIT / Foreign University",
+      "experience": "Minimum 2 Years of Post Ph.D. experience in Academics / Research / Industry Salary: As per the revised AICTE Pay scale",
+      "pay_scale": "AICTE Pay scale",
+      "deadline": "Rolling / See official post",
+      "source_url": "https://mits.ac.in/positionsoffered",
+      "extraction_layout": "HTML Table"
+    },
+    {
+      "position": "Assistant Professor with M.Tech Qualification",
+      "department": "School of Computing",
+      "qualification": "M.Tech",
+      "experience": "As per UGC / AICTE norms",
+      "pay_scale": "AICTE Pay scale",
+      "deadline": "Rolling / See official post",
+      "source_url": "https://mits.ac.in/positionsoffered",
+      "extraction_layout": "HTML Table"
+    },
+    {
+      "position": "Professor",
+      "department": "Computer Applications",
+      "qualification": "Ph.D. in appropriate discipline from IIT / NIT / Foreign University",
+      "experience": "Minimum 15 Years of Post Ph.D. experience in Academics / Research / Industry Salary: As per the revised AICTE Pay scale at minimum of Rs",
+      "pay_scale": "AICTE Pay scale at minimum of Rs",
+      "deadline": "Rolling / See official post",
+      "source_url": "https://mits.ac.in/positionsoffered",
+      "extraction_layout": "HTML Table"
+    },
+    {
+      "position": "Professor",
+      "department": "Electronics & Communication Engineering",
+      "qualification": "Ph.D. in appropriate discipline from IIT / NIT / Foreign University",
+      "experience": "Minimum 12 Years of Post Ph.D. experience in Academics / Research / Industry Salary: As per the revised AICTE Pay scale",
+      "pay_scale": "AICTE Pay scale",
+      "deadline": "Rolling / See official post",
+      "source_url": "https://mits.ac.in/positionsoffered",
+      "extraction_layout": "HTML Table"
+    },
+    {
+      "position": "Associate Professor",
+      "department": "Electronics & Communication Engineering",
+      "qualification": "Ph.D. in appropriate discipline from IIT / NIT / Foreign University",
+      "experience": "Minimum 7 Years of Post Ph.D. experience in Academics / Research / Industry Salary: As per the revised AICTE Pay scale",
+      "pay_scale": "AICTE Pay scale",
+      "deadline": "Rolling / See official post",
+      "source_url": "https://mits.ac.in/positionsoffered",
+      "extraction_layout": "HTML Table"
+    },
+    {
+      "position": "Assistant Professor",
+      "department": "Electronics & Communication Engineering",
+      "qualification": "Ph.D. in appropriate discipline from IIT / NIT / Foreign University",
+      "experience": "Minimum 3 Years of Post Ph.D. experience in Academics / Research / Industry Salary: As per the revised AICTE Pay scale at minimum of Rs",
+      "pay_scale": "AICTE Pay scale at minimum of Rs",
+      "deadline": "Rolling / See official post",
+      "source_url": "https://mits.ac.in/positionsoffered",
+      "extraction_layout": "HTML Table"
+    },
+    {
+      "position": "Professor",
+      "department": "Electrical & Electronics Engineering",
+      "qualification": "Ph.D. in appropriate discipline from IIT / NIT / Foreign University",
+      "experience": "Minimum 12 Years of Post Ph.D. experience in Academics / Research / Industry Salary: As per the revised AICTE Pay scale at minimum of Rs",
+      "pay_scale": "AICTE Pay scale at minimum of Rs",
+      "deadline": "Rolling / See official post",
+      "source_url": "https://mits.ac.in/positionsoffered",
+      "extraction_layout": "HTML Table"
+    },
+    {
+      "position": "Associate Professor",
+      "department": "Electrical & Electronics Engineering",
+      "qualification": "Ph.D. in appropriate discipline from IIT / NIT / Foreign University",
+      "experience": "Minimum 7 Years of Post Ph.D. experience in Academics / Research / Industry Salary: As per the revised AICTE Pay scale",
+      "pay_scale": "AICTE Pay scale",
+      "deadline": "Rolling / See official post",
+      "source_url": "https://mits.ac.in/positionsoffered",
+      "extraction_layout": "HTML Table"
+    },
+    {
+      "position": "Professor",
+      "department": "Mathematics Physics Chemistry English",
+      "qualification": "Ph.D. in appropriate discipline from IIT / NIT / EFLU / Foreign University (with First Class at UG & PG)",
+      "experience": "Minimum 15 Years of Post Ph.D. experience in Academics / Research / Industry Salary: As per revised AICTE Pay Scale of a Minimum of Rs",
+      "pay_scale": "AICTE Pay Scale of a Minimum of Rs",
+      "deadline": "Rolling / See official post",
+      "source_url": "https://mits.ac.in/positionsoffered",
+      "extraction_layout": "HTML Table"
+    },
+    {
+      "position": "Assistant Professor",
+      "department": "Management Studies",
+      "qualification": "Ph.D. in appropriate discipline from IIM / IIT / NIT (with First class at UG & PG in Management)",
+      "experience": "Minimum 2 Years of Post Ph.D. experience in Academics / Research / Industry Salary: As per the revised AICTE Pay scale at minimum of Rs",
+      "pay_scale": "AICTE Pay scale at minimum of Rs",
+      "deadline": "Rolling / See official post",
+      "source_url": "https://mits.ac.in/positionsoffered",
+      "extraction_layout": "HTML Table"
+    },
+    {
+      "position": "Dean - Artificial Intelligence & Machine Learning",
+      "department": "General / Multi-Department",
+      "qualification": "Ph.D. in appropriate discipline from IIT / NIT / IIM / Foreign University (with First class at B",
+      "experience": "Minimum 15 years of Post Ph.D. experience in Academics / Research / Industry and relevant experience for the offered positions Salary: As per the revised AICTE Pay scale",
+      "pay_scale": "AICTE Pay scale",
+      "deadline": "Rolling / See official post",
+      "source_url": "https://mits.ac.in/dean-positionsoffered",
+      "extraction_layout": "HTML Table"
+    },
+    {
+      "position": "Dean - Online & Distance Education",
+      "department": "General / Multi-Department",
+      "qualification": "Ph.D. in appropriate discipline from IIT / NIT / IIM / Foreign University (with First class at B",
+      "experience": "Minimum 15 years of Post Ph.D. experience in Academics / Research / Industry and relevant experience for the offered positions Salary: As per the revised AICTE Pay scale",
+      "pay_scale": "AICTE Pay scale",
+      "deadline": "Rolling / See official post",
+      "source_url": "https://mits.ac.in/dean-positionsoffered",
+      "extraction_layout": "HTML Table"
+    }
+  ]
+}

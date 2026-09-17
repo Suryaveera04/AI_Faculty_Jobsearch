@@ -322,6 +322,14 @@ export const StorageService = {
     setToStorage(STORAGE_KEYS.JOBS, jobs);
     this.addAuditLog('institute_admin', `Published new 7th CPC faculty vacancy: ${job.title}`, job.id, 'JOB_MODERATION');
   },
+  addJobs(newJobs: Job[]): void {
+    const existing = this.getJobs();
+    const existingTitles = new Set(existing.map(j => `${j.title.toLowerCase().trim()}_${j.instituteName.toLowerCase().trim()}`));
+    const toAdd = newJobs.filter(j => !existingTitles.has(`${j.title.toLowerCase().trim()}_${j.instituteName.toLowerCase().trim()}`));
+    const combined = [...toAdd, ...existing];
+    setToStorage(STORAGE_KEYS.JOBS, combined);
+    this.addAuditLog('super_admin', `Imported ${toAdd.length} live faculty vacancies via Universal Web Scraper`, 'batch-scrape', 'JOB_MODERATION');
+  },
 
   // Candidate Profile (Isolated per-user)
   getCandidateProfilesMap(): Record<string, CandidateProfile> {

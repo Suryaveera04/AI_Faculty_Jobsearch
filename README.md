@@ -90,6 +90,7 @@ ai-faculty-job-search/
 │   └── storage.ts             # Browser storage & state persistence helpers
 ├── types/
 │   └── index.ts               # Core TypeScript interfaces & types
+├── scraper.py                 # Universal deep college faculty scraper engine (Python)
 ├── tailwind.config.ts         # Custom themes, colors & glassmorphic styles
 ├── tsconfig.json              # TypeScript configuration
 └── package.json               # Dependencies and scripts
@@ -97,40 +98,65 @@ ai-faculty-job-search/
 
 ---
 
-## 🚀 Getting Started
+## 🕷️ Live University Faculty Scraper & Ingestion Engine
 
-Follow these steps to set up and run the project locally.
+AcadeXMatch AI includes a native, asynchronous **Universal Academic Faculty Web Scraper** (`scraper.py`). It can crawl any Indian university, IIT, NIT, or autonomous college portal, automatically discover recruitment hubs, extract structured faculty vacancies (roles, departments, qualifications, pay scale, deadlines), and directly import them into the live `/jobs` board for AI candidate matching.
 
-### Prerequisites
+### ⚙️ Python Prerequisites
 
-Ensure you have the following installed on your machine:
-- **Node.js**: `v18.17.0` or later (Recommended: `v20.x` or `v22.x`)
-- **npm**: `v9.x` or later (or `yarn` / `pnpm`)
-- **Git**
+The scraper engine runs with Python 3.10+ and standard parsing packages:
+```bash
+pip install httpx beautifulsoup4
+```
 
-### Installation
+---
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Suryaveera04/AI_Faculty_Jobsearch.git
-   cd AI_Faculty_Jobsearch
-   ```
+### 🎯 How to Run the Scraper for Perfect Output
 
-2. **Install project dependencies**:
-   ```bash
-   npm install
-   ```
+You can run the scraper either through the **web application dashboard** or directly from your **terminal / CLI**:
 
-3. **Start the development server**:
+#### Method 1: Using the Interactive Web Dashboard (Recommended & Easiest)
+
+1. Start the web application:
    ```bash
    npm run dev
    ```
+2. Navigate to **`http://localhost:3000/scraper`** (or click **"University Scraper"** in the top navigation bar).
+3. Enter any university or college URL (e.g., `https://mits.ac.in/positionsoffered`) or click any of the 1-click test presets (MITS, Amrita, IIT Bombay, IISc).
+4. Click **"Run Deep Scraper"**.
+5. Watch the live crawl telemetry (pages crawled, candidate hubs discovered, faculty positions detected).
+6. Click **"Import Openings to Jobs"** to immediately sync all extracted vacancies into the live job board (`/jobs`) with 7th CPC band mapping! You can also click **"Export JSON"** to download the structured data.
 
-4. **Open the application**:
-   Open your browser and navigate to:
+---
+
+#### Method 2: Running via Root CLI / Terminal
+
+Run the scraper directly from your workspace root:
+
+```bash
+# Syntax: python scraper.py <TARGET_COLLEGE_URL>
+python scraper.py https://mits.ac.in/positionsoffered
+
+# Or run via npm script:
+npm run scrape -- https://mits.ac.in/positionsoffered
+
+# Or run interactively (prompts for URL in terminal):
+python scraper.py
+```
+
+##### 📋 What this does:
+1. Deep-crawls candidate recruitment subpages up to depth 2.
+2. Extracts positions, departments, qualifications, and pay scales using layout heuristics (tables, cards, headings).
+3. Prints a formatted console summary with emojis, role titles, and links.
+4. Automatically saves structured results to:
    ```text
-   http://localhost:3000
+   data/faculty_openings_<domain>.json
    ```
+
+##### 🌟 Verified Working Test URLs:
+- **Madanapalle Institute of Technology & Science (MITS)**: `https://mits.ac.in/positionsoffered`
+- **Amrita Vishwa Vidyapeetham**: `https://www.amrita.edu/careers/`
+- **IIT Bombay Faculty Recruitment**: `https://www.iitb.ac.in/en/careers/faculty-recruitment`
 
 ---
 
@@ -140,10 +166,12 @@ In the project directory, you can run:
 
 | Command | Description |
 | :--- | :--- |
-| `npm run dev` | Runs the app in development mode with Hot Module Replacement (HMR). |
+| `npm run dev` | Runs the Next.js app in development mode at `http://localhost:3000`. |
 | `npm run build` | Builds the production bundle optimized for deployment. |
-| `npm run start` | Starts the production server after running `npm run build`. |
+| `npm run start` | Starts the production Next.js server. |
 | `npm run lint` | Runs Next.js ESLint to analyze code quality and potential errors. |
+| `npm run scrape` | Runs the Universal College Faculty Scraper CLI (`python scraper.py`). |
+| `npm run scraper` | Alias to run the deep scraper entry point (`python Web_Scraper/test_scraper.py`). |
 
 ---
 

@@ -27,11 +27,11 @@ export async function connectToDatabase() {
 
   if (!cached.promise) {
     try {
-      // Dynamic import of mongoose if installed
+      // @ts-ignore - optional dynamic import if installed
       const mongoose = await import('mongoose');
       cached.promise = mongoose.connect(MONGODB_URI, {
         bufferCommands: false,
-      }).then((m) => {
+      }).then((m: any) => {
         console.log(`[ACADEXMATCH.AI] Connected to MongoDB at ${MONGODB_URI}`);
         return m;
       });

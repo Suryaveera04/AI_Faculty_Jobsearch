@@ -19,7 +19,8 @@ import {
   CheckCircle2,
   LogIn,
   LogOut,
-  UserPlus
+  UserPlus,
+  Globe
 } from 'lucide-react';
 
 interface NavLinkItem {
@@ -82,6 +83,7 @@ export default function Navbar() {
       { href: '/jobs', label: 'Explore Vacancies', icon: Search },
       { href: '/institutes', label: 'Universities & IITs', icon: Building2 },
       { href: '/candidate/resume-parser', label: 'AI CV Parser', icon: Sparkles, badge: 'AI' },
+      { href: '/scraper', label: 'University Scraper', icon: Globe, badge: 'Live' },
       { href: '/candidate/dashboard', label: 'Candidate Portal', icon: GraduationCap },
       { href: '/institute/dashboard', label: 'Institute ATS', icon: Briefcase },
     ],
@@ -91,15 +93,18 @@ export default function Navbar() {
       { href: '/candidate/applications', label: 'My Applications', icon: FileText, count: '3' },
       { href: '/candidate/profile', label: 'Academic Profile & API', icon: GraduationCap },
       { href: '/candidate/resume-parser', label: 'AI CV Parser', icon: Sparkles, badge: 'New' },
+      { href: '/scraper', label: 'Live Scraper', icon: Globe, badge: 'Live' },
     ],
     institute_admin: [
       { href: '/institute/dashboard', label: 'Overview', icon: Layers },
       { href: '/institute/ats', label: '8-Stage ATS Kanban', icon: Briefcase, count: '28' },
       { href: '/institute/post-job', label: 'Post 7th CPC Vacancy', icon: Sparkles, badge: 'UGC' },
+      { href: '/scraper', label: 'University Scraper', icon: Globe, badge: 'Live' },
       { href: '/institutes', label: 'Institute Directory', icon: Building2 },
     ],
     super_admin: [
       { href: '/admin', label: 'Compliance & Verification', icon: ShieldCheck },
+      { href: '/scraper', label: 'Universal Scraper', icon: Globe, badge: 'Live' },
       { href: '/jobs', label: 'Live Job Inventory', icon: Search },
       { href: '/institutes', label: 'AISHE Registry', icon: Building2 },
     ],
